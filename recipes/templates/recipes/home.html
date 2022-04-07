@@ -16,6 +16,11 @@
         integrity="sha512-OivR4OdSsE1onDm/i3J3Hpsm5GmOVvr9r49K3jJ0dnsxVzZgaOJ5MfxEAxCyGrzWozL9uJGKz6un3A7L+redIQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        body {
+            font-family: 'Amaranth';
+            font-size: 22px;
+        }
+
         .main-header {
             background-color: black;
             padding: 40px;
@@ -34,6 +39,17 @@
         .fa-app-store-ios {
             margin: 5px;
         }
+
+        .search-container {
+            margin: 30px;
+            text-align: center;
+        }
+
+        .search-input {
+            border: 2px solid black;
+            width: 90%;
+            height: 35px;
+        }
     </style>
 </head>
 
@@ -48,6 +64,9 @@
             </h1>
         </div>
     </header>
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="Type here to search">
+    </div>
 </body>
 
 </html>
