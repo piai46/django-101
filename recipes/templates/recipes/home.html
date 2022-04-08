@@ -23,6 +23,7 @@
         body {
             font-family: 'sans-serif';
             margin: 0;
+            background-color: rgb(226, 225, 225);
         }
 
         h1,
@@ -60,9 +61,45 @@
         }
 
         .search-input {
-            border: 2px solid black;
-            width: 90%;
+            width: 100%;
             height: 35px;
+            padding-right: 25px;
+        }
+
+        .search-button {
+            font-size: 20px;
+            top: 5px;
+            right: 0;
+            position: absolute;
+            cursor: pointer;
+        }
+
+        .search-button,
+        .search-input {
+            background: none;
+            border: none;
+            outline: none;
+            transition: all 300ms ease-in-out;
+        }
+
+        .search-form {
+            border: 2px solid black;
+            height: 35px;
+            max-width: 600px;
+            width: 90%;
+            margin: 0 auto;
+            border-radius: 4px;
+            position: relative;
+            transition: all 300ms ease-in-out;
+        }
+
+        .search-form:focus-within {
+            border-color: deepskyblue;
+            background-color: white;
+        }
+
+        .search-form:focus-within .search-button {
+            color: deepskyblue;
         }
 
         .logo-icon {
@@ -83,7 +120,10 @@
         </div>
     </header>
     <div class="search-container">
-        <input type="text" class="search-input" placeholder="Type here to search">
+        <form action="" class="search-form">
+            <input type="search" class="search-input" placeholder="Type here to search">
+            <button typye="submit" class="search-button"><i class="fas fa-search"></i></button>
+        </form>
     </div>
 </body>
 
