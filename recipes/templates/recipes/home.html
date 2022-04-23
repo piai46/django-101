@@ -105,6 +105,40 @@
         .logo-icon {
             margin-right: 5px;
         }
+
+        .main-content {
+            padding: 0 20px 20px 20px;
+        }
+
+        .main-content-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 30px;
+        }
+
+        .recipe {
+            background-color: #fff;
+            box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.5);
+            transition: all 300ms ease-in-out;
+            transform: scale(1);
+        }
+
+        .recipe img {
+            max-width: 100%;
+        }
+
+        .recipe-list-item {
+            max-width: 640px;
+        }
+
+        .recipe-list-item:hover {
+            transform: scale(1.02);
+            box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .recipe-title-container {
+            padding: 10px;
+        }
     </style>
 </head>
 
@@ -125,6 +159,19 @@
             <button typye="submit" class="search-button"><i class="fas fa-search"></i></button>
         </form>
     </div>
+
+    <main class="main-content-container">
+        <div class="main-content main-content-list container">
+            <div class="recipe recipe-list-item">
+                <div class="recipe-cover">
+                    <img src="https://via.placeholder.com/1280x720.png" alt="img-temp">
+                    <div class="recipe-title-container">
+                        <h2 class="recipe-title">Lorem ipsum dolor sit amet.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
